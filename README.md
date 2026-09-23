@@ -25,4 +25,10 @@ Java Runtime Environment (JRE) 8 or higher
 
 No external libraries or dependencies
 
-64MB RAM For stable 
+**64MB RAM** For **stable work**
+
+**1.0 GHz** Processor (Intel Pentium 4 / AMD Athlon 64 or newer)
+
+Windows 7+
+
+**100KB** Free Space
