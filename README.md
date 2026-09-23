@@ -32,3 +32,15 @@ No external libraries or dependencies
 Windows 7+
 
 **100KB** Free Space
+
+## How to Build and Run
+
+Download JDK 25 (LTS) From https://adoptium.net/temurin/releases and complete download
+To compile the project and build the executable `.jar` installer, follow these steps:
+
+1. Clone or download this repository to your local machine.
+2. Ensure you have the **Java Development Kit (JDK) 8** or higher installed and configured in your system's PATH.
+3. Make sure the project folder structure is preserved: **`build.bat`** must be in the root directory, and all `.java` files must be located inside the **`src/main/java/`** folder.
+4. Double-click the **`build.bat`** file.
+5. The script will automatically compile the source files from the `src` folder, create the separate components (`NotepadApp.jar`, `unins.jar`, `sha256sumcalc.jar`), pack them inside the temporary resources, and generate the final **`install.jar`** file in the root directory.
+6. Run the generated **`install.jar`** to install the application.
