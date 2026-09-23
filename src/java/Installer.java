@@ -232,7 +232,7 @@ public class Installer {
         installBtn.setEnabled(false);
         browseBtn.setEnabled(false);
         cmbLang.setEnabled(false);
-        pathField.setReadOnly(true);
+        pathField.setEditable(false);
 
         new Thread(() -> {
             try {
@@ -330,7 +330,9 @@ public class Installer {
 
         Files.write(settings.toPath(), sb.toString().getBytes(java.nio.charset.StandardCharsets.UTF_8));
 
-        settings.setHidden(true);
+        try {
+            Files.setAttribute(settings.toPath(), "dos:hidden", true);
+        } catch (Exception ignored) {}
     }
 
     private static void launchApp() {
